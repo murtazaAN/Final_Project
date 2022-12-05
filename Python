@@ -1,0 +1,72 @@
+#Bank ATM Transactions
+
+print ("Welcome to SSB")
+Trials = 3
+UserPin = 1234
+Balance = 14000
+
+while Trials != 0:
+    Pin = int(input("Please enter your 4 Digit PIN: "))
+    if Pin != UserPin:
+        Trials -= 1
+        print("Incorrect PIN, You have", Trials, "Trials Left")
+    else:
+        print("d - Deposit")
+        print("w - Withdraw")
+        print("b - Balance")
+        UserChoice = input("Please Enter a Key: ")
+        if UserChoice == "d":
+            UserDeposit = input("Enter the Amount you want to Deposit: ")
+            Balance = (Balance + int(UserDeposit))
+            print(UserDeposit, "€ Have been Deposited to your Account")
+        if UserChoice == "w":
+            print("1 = 50")
+            print("2 = 100")
+            print("3 = 150")
+            print("4 = 200")
+            print("5 = 300")
+            print("6 = 400")
+            print("7 = More Amounts")
+            UserWithdraw = int(input("Enter your Desired number: "))
+            if UserWithdraw == 1:
+                Balance = Balance - 50
+                print("€ 50 Have been withdrawn from your Account")
+            elif UserWithdraw == 2:
+                Balance = Balance - 100
+                print("€ 100 Have been withdrawn from your Account")
+            elif UserWithdraw == 3:
+                Balance = Balance - 150
+                print("€ 150 Have been withdrawn from your Account")
+            elif UserWithdraw == 4:
+                Balance = Balance - 200
+                print("€ 200 Have been withdrawn from your Account")
+            elif UserWithdraw == 5:
+                Balance = Balance - 300
+                print("€ 300 Have been withdrawn from your Account")
+            elif  UserWithdraw == 6:
+                Balance = Balance - 400
+                print("€ 400 Have been withdrawn from your Account")
+            elif UserWithdraw == 7:
+                UserWithdraw = int(input("Enter the amount you want to withdraw: "))
+                print(UserWithdraw, "€ from your account have been withdrawn")
+                Balance = (Balance - int(UserWithdraw))
+            else:
+                print("Please choose a correct Number!")
+        if UserChoice == "b":
+            print("Your available Balance is : ",Balance)
+    UserExit = input("would you like to continue? y/n:")
+    if UserExit == "n":
+        print("Thank you for Trustin on SSB")
+        break
+    if UserExit == "y":
+        continue    
+    else:
+        print("Invalid Entery")
+        break
+    
+        
+        
+
+
+
+
