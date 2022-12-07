@@ -25,37 +25,7 @@ while Trials != 0:
     else:
         continue
 
-===========================================
 
-print ("Welcome to SSB")
-Trials = 3
-UserPin = 1234
-B = 12786 
-
-while Trials != 0:
-    Pin = int(input("Please enter your PIN: "))
-    if Pin != UserPin:
-        Trials -= 1
-        print("Wrong PIN, You have", Trials, "Trials Left")
-    else:
-        UserChoice = input("d: Deposit or w: Withdraw or b: Balance: ")
-        if UserChoice == "d":
-            UserDeposit = input("Enter the Amount you want to Deposit: ")
-            print(UserDeposit, "€ Have been Deposited to your Account")
-        if UserChoice == "w":
-            UserWithdraw = input("1: 50 € or 2: 100 € or 3: 200 € or 4: 400 € or 5:Any other Amount: ")
-            print(UserWithdraw)
-            UserWithdraw = int(input("Enter your Desired Amount: "))
-            if UserWithdraw == "5":
-                print(UserWithdraw, "€ Have been withdrawn from your Account")
-        if UserChoice == "b":
-            print("Your available Balance is : ",B)
-    UserExit = input("would you like to continue? y/n:")
-    if UserExit == "n":
-        print("Thank you for Trustin on SSB")
-        break
-    else:
-        continue
 
 
 
