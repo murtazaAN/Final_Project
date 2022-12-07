@@ -2,12 +2,6 @@ print ("Welcome to SSB")
 Trials = 3
 UserPin = 1234
 
-while Trials != 0:
-    Pin = int(input("Please enter your PIN: "))
-    if Pin != UserPin:
-        Trials -= 1
-        pr
-
 
 
 
