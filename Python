@@ -6,24 +6,7 @@ while Trials != 0:
     Pin = int(input("Please enter your PIN: "))
     if Pin != UserPin:
         Trials -= 1
-        print("Wrong PIN, You have", Trials, "Trials Left")
-    else:
-        UserChoice = input("D: Deposit or W: Withdraw or S: Statement: ")
-        if UserChoice == "d":
-            UserDeposit = input("Enter the Amount you want to Deposit: ")
-            print(UserDeposit, "€ Have been Deposited to your Account")
-        if UserChoice == "w":
-            UserWithdraw = input("Enter the amount you want to Withdraw: ")
-            print(UserWithdraw, "€ Have been withdrawn from your Account")
-        if UserChoice == "S":
-            UserStatement = int(input("Please enter Your PIN: "))
-            print(UserStatement, "You have € in your Account")    
-    UserExit = input("would you like to continue? Y/N:")
-    if UserExit == "N":
-        print("Thank you for Trustin on SSB")
-        break
-    else:
-        continue
+        pr
 
 
 
